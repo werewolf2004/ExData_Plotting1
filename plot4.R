@@ -13,7 +13,7 @@ dt$Date <- as.Date(dt$Date, "%d/%m/%Y")
 date1 <- as.Date("2007-02-01")
 date2 <- as.Date("2007-02-02")
 
-dts <- dt[dt$Date >= dateE1 & dt$Date <= date2, ]
+dts <- dt[dt$Date >= date1 & dt$Date <= date2, ]
 
 
 ## setting locale to English (to display days)

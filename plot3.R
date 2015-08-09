@@ -13,7 +13,7 @@ dt$Date <- as.Date(dt$Date, "%d/%m/%Y")
 date1 <- as.Date("2007-02-01")
 date2 <- as.Date("2007-02-02")
 
-dts <- dt[dt$Date >= dateE1 & dt$Date <= date2, ]
+dts <- dt[dt$Date >= date1 & dt$Date <= date2, ]
 
 
 ## setting locale to English (to display days)
@@ -22,6 +22,7 @@ Sys.setlocale("LC_ALL", "English")
 ## building plot3
 par(mar = c(5.1, 5.1, 4.1, 2.1))
 par(cex = 0.8)
+par(mfrow = c(1, 1))
 
 plot(dts$Time, dts$Sub_metering_1, type = "n", pch = NA_integer_,  xlab = "", ylab = "Energy sub metering")
 points(dts$Time, dts$Sub_metering_1, type = "o", pch = NA_integer_)

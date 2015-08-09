@@ -18,6 +18,7 @@ dts <- dt[dt$Date >= date1 & dt$Date <= date2, ]
 ## building plot1
 par(mar = c(5.1, 5.1, 4.1, 2.1))
 par(cex = 0.8)
+par(mfrow = c(1, 1))
 hist(as.numeric(dts$Global_active_power), col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 
 
